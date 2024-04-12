@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import styles from './About.module.css';
 
-import owl from '@/public/svg/owl.svg?url';
+import owl from '@/public/SVG/owl.svg?url';
 
 const About = (): JSX.Element => {
   return (

@@ -6,8 +6,8 @@ import Image from 'next/image';
 import styles from './Lesson-legister.module.css';
 import Button from '../Button/Button';
 
-import owl from '@/public/svg/owl_4.svg?url';
-import letter from '@/public/svg/letter.svg?url';
+import owl from '@/public/SVG/owl_4.svg?url';
+import letter from '@/public/SVG/letter.svg?url';
 import Contacts from '../Contacts/Contacts';
 import Popover from '../ui/Popover/Popover';
 
