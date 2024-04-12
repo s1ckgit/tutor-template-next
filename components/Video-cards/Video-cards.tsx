@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { VideoCardProps } from '../Video-card/Video-card.props';
 import styles from './Video-cards.module.css';
 import VideoCard from '../Video-card/Video-card';
