@@ -1,0 +1,172 @@
+
+.comment {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: 
+  '. avatar'
+  'text text'
+  'buttons name';
+  row-gap: 30px;
+  background-color: var(--main-background);
+  border-radius: 8px;
+  position: relative;
+  width: 100%;
+  padding: 48px;
+  margin-top: 150px;
+}
+
+.comment::before {
+  content: '';
+  position: absolute;
+  width: 90%;
+  height: 32px;
+  background-color: var(--attention);
+  top: 100%;
+  left: 5%;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+}
+
+.photo {
+  width: 170px;
+  height: 170px;
+  position: relative;
+  align-self: flex-end;
+  border-radius: 100%;
+  outline: solid 4px white;
+  grid-area: avatar;
+  justify-self: end;
+}
+
+.image {
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.buttons {
+  display: flex;
+  column-gap: 10px;
+  grid-area: buttons;
+}
+
+.button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 100%;
+  width: 48px;
+  height: 48px;
+  transition: box-shadow .3s;
+}
+
+.button:not(:disabled):active {
+  transform: scale(.95);
+}
+
+.button:hover {
+  box-shadow: 0px 0px 10px var(--primary);
+}
+
+.text {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  grid-area: text;
+  min-height: 100px;
+}
+
+.name {
+  grid-area: name;
+  justify-self: end;
+  align-self: center;
+  font-weight: 500;
+}
+
+.shape {
+  position: absolute;
+  top: 48px;
+  left: 48px;
+}
+
+.polygon {
+  position: absolute;
+  top: 30%;
+  left: -20.5px;
+}
+
+.oval {
+  position: absolute;
+  bottom: 22%;
+  right: -17.5px;
+}
+
+
+.owl {
+  position: absolute;
+  right: 50%;
+  top: -20%;
+  z-index: -1;
+}
+
+.fadeIn {
+    animation: fadeIn 1s normal;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 492px) {
+  .comment {
+    padding: 1.5rem;
+  }
+
+  .shape {
+    left: 24px;
+    top: 24px;
+  }
+
+  .owl {
+    right: 25%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .comment {
+    grid-template-columns: auto;
+    grid-template-areas: 
+    'avatar'
+    'text'
+    'name'
+    'buttons'
+    ;
+  }
+
+  .shape {
+    display: none;
+  }
+
+  .photo {
+    justify-self: center;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .name {
+    font-size: 16px;
+  }
+}

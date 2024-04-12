@@ -1,0 +1,43 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+  height: auto;
+  transition: height 0.3s;
+}
+
+.button {
+  position: absolute;
+  bottom: -80px;
+  transform: translateX(-50%);
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  border: none;
+  background-color: var(--primary);
+  background: url('../../public/svg/expand.svg') var(--primary) center center/cover no-repeat;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: transform .15s, box-shadow .5s;
+}
+
+.button:active {
+  transform: translateX(-50%) scale(0.9);
+}
+
+.button:hover {
+  box-shadow: 0px 0px 10px var(--primary);
+}
+
+@media screen and (max-width: 1201px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}

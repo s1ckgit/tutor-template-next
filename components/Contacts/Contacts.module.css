@@ -1,0 +1,18 @@
+.socials {
+  display: flex;
+  column-gap: 1rem;
+  justify-content: center;
+  background-color: white;
+}
+
+.social {
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (max-width: 492px) {
+  .social {
+    width: 75px;
+    height: 75px;
+  }
+}

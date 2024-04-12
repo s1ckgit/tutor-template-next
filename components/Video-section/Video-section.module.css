@@ -1,0 +1,76 @@
+.section {
+    padding-top: 90px;
+    padding-bottom: 80px;
+}
+
+.container {
+    position: relative;
+}
+
+.title {
+    font-family: var(--subtitle-font);
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 114.286%;
+}
+
+.owl {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 1201px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .title {
+    font-size: 48px;
+  }
+
+  .owl {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .title {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 609px) {
+  .owl {
+    top: 40px;
+    right: 35%;
+  }
+
+  .title {
+    margin-bottom: 150px;
+    font-size: 34px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 525px) {
+
+  .owl {
+    top: 80px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .owl {
+    top: 100px;
+  }
+}

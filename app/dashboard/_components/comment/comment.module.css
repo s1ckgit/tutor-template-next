@@ -1,0 +1,23 @@
+.comment {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+
+  background-color: var(--main-background);
+  padding: 2rem;
+  border-radius: 0.5rem;
+
+  overflow: hidden;
+
+  transition: filter 0.3s;
+}
+
+.comment:hover {
+  filter: brightness(0.9)
+}
+
+.photo {
+  object-fit: cover;
+  border-radius: 100%
+}

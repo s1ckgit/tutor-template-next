@@ -1,0 +1,24 @@
+.comments {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.header {
+
+}
+
+.ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 3rem;
+
+  list-style-type: none;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}

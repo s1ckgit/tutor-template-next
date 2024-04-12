@@ -1,0 +1,98 @@
+.post {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content 50px;
+    grid-template-areas: 
+    "title title"
+    "text text"
+    "date likes";
+    padding: 16px;
+    outline: 1px solid #ddd4d49a;
+    border-radius: 8px;
+    box-shadow: 5px -5px 0px var(--attention);
+    background-color: var(--main-background);
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    animation: slideInDown .3s forwards;
+}
+
+.postTitle {
+    font-family: var(--title-font);
+    grid-area: title;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 133.333%;
+    justify-self: center;
+}
+
+.postText {
+    grid-area: text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    border-bottom: 1px solid #312f2f70;
+    border-top: 1px solid #312f2f70;
+    padding-bottom: 30px;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.postDate {
+    grid-area: date;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    align-self: center;
+    position: relative;
+}
+
+.shape1 {
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+}
+
+.shape2 {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.shape3 {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.shape4 {
+    position: absolute;
+    top: -25px;
+    left: 150px;
+}
+
+@media screen and (max-width: 525px) {
+  .postTitle {
+    font-size: 18px;
+  }
+
+  .postText {
+    font-size: 14px;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}

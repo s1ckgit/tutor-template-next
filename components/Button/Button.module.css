@@ -1,0 +1,36 @@
+.default {
+    padding: 12px 52px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform .15s, box-shadow .5s;
+    position: relative;
+    font-family: var(--main-font);
+}
+
+.default:active {
+    transform: scale(.95);
+}
+
+.primary {
+    background-color: var(--primary);
+    color: #FFF;
+}
+
+.primary:hover {
+    box-shadow: 0px 0px 10px var(--primary);
+}
+
+.ghost:hover {
+    box-shadow: 0px 0px 10px var(--ghost-border);
+}
+
+.ghost {
+    color: #fff;
+    background-color: transparent;
+    outline: 1px solid var(--ghost-border);
+}

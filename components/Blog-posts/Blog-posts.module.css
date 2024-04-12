@@ -1,0 +1,33 @@
+.posts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  align-self: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.button {
+  color: rgba(51, 51, 51, .5);
+  font-weight: bold;
+  border: 1px solid rgba(240, 120, 103, 0.30);
+  background-color: transparent;
+  width: max-content;
+  padding: 15px;
+  cursor: pointer;
+  transition: color .3s, background-color .3s;
+}
+
+.active {
+  background-color: var(--primary);
+  color: white;
+}
+
+.button:hover {
+  box-shadow: 0px 0px 10px rgba(240, 120, 103, 0.30);
+}

@@ -1,0 +1,162 @@
+.hero {
+  background-color: var(--main-background);
+  min-height: 800px;
+  padding-top: 200px;
+  padding-bottom: 112px;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  background: url('../../public/hero-image.jpg') center center/cover no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  filter: brightness(70%);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1.25fr 1.5fr;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  text-shadow: -3px 3px 3px black;
+}
+
+.desc {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.buttons {
+  display: flex;
+  column-gap: 30px;
+}
+
+.button {
+  box-shadow: -3px 3px 3px black;
+}
+
+.title {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  font-family: var(--title-font);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 236 / 173;
+  object-fit: cover;
+  box-shadow: 0px 0px 20px black;
+  outline: 5px solid var(--primary);
+}
+
+.imageWrapper {
+  position: relative;
+  z-index: 1;
+}
+
+/* .imageWrapper::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-background);
+  top: 0;
+  right: 0;
+  z-index: -1;
+} */
+
+@media screen and (max-width: 1200px) {
+  .title {
+    font-size: 54px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 46px;
+  }
+
+  .desc {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .title {
+    font-size: 42px;
+  }
+
+  .buttons {
+    column-gap: 14px;
+  }
+
+  .desc {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .title {
+    font-size: 38px;
+  }
+
+  .buttons {
+    column-gap: 10px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    row-gap: 100px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 46px;
+  }
+
+  .desc {
+    font-size: 18px;
+  }
+
+  .buttons {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 492px) {
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+  }
+
+  .desc {
+    text-align: center;
+  }
+
+  .social {
+    width: 75px;
+    height: 75px;
+  }
+}
