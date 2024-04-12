@@ -5,12 +5,12 @@ import { useState, useRef } from 'react';
 
 import styles from './Comment.module.css';
 
-import LeftButtonIcon from '@/public/svg/left.svg';
-import RightButtonIcon from '@/public/svg/right.svg';
-import Shape from '@/public/svg/Shape.svg?url';
-import Polygon from '@/public/svg/Polygon.svg?url';
-import Oval from '@/public/svg/Oval.svg?url';
-import owl from '@/public/svg/owl_3.svg?url';
+import LeftButtonIcon from '@/public/SVG/left.svg';
+import RightButtonIcon from '@/public/SVG/right.svg';
+import Shape from '@/public/SVG/Shape.svg?url';
+import Polygon from '@/public/SVG/Polygon.svg?url';
+import Oval from '@/public/SVG/Oval.svg?url';
+import owl from '@/public/SVG/owl_3.svg?url';
 import { useSlider } from '@/hooks/use-slider';
 import Tooltip from '../ui/Tooltip/Tooltip';
 
