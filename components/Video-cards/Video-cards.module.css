@@ -16,7 +16,7 @@
   height: 60px;
   border: none;
   background-color: var(--primary);
-  background: url('../../public/svg/expand.svg') var(--primary) center center/cover no-repeat;
+  background: url('../../public/SVG/expand.svg') var(--primary) center center/cover no-repeat;
   border-radius: 100%;
   cursor: pointer;
   transition: transform .15s, box-shadow .5s;
