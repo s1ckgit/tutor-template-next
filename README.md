@@ -16,7 +16,7 @@
 - **Next.js**
 - **React**
 - **MongoDB**
-- **Auth.js**: 
+- **Auth.js**
 
 ## Установка
 
